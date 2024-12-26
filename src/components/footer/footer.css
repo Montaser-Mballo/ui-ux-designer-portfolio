@@ -1,0 +1,101 @@
+.footer {
+    background-color: #ffffff; /* Set to white */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 2rem; /* Reduce margin */
+    padding: 1rem 0; /* Reduce padding */
+    position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%; /* Ensures it spans across */
+}
+
+.footer__container {
+    padding: 0.5rem 0; /* Keep minimal padding */
+}
+
+.footer__title, .footer__link {
+    color: var(--title-color);
+}
+
+.footer__title {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Reduced margin */
+    font-size: 1.25rem; /* Adjust title size */
+}
+
+.footer__link {
+    font-size: 0.9rem; /* Adjust link size */
+}
+
+.footer__link:hover {
+    color: var(--title-color-dark);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem; /* Reduce gap between links */
+    margin-bottom: 1.5rem; /* Reduce bottom margin */
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem; /* Reduce gap between icons */
+}
+
+.footer__social-link {
+    background-color: var(--title-color);
+    color: #ffffff; /* White text on dark background */
+    font-size: 1rem; /* Adjust icon size */
+    padding: 0.35rem; /* Reduce padding */
+    border-radius: 0.35rem; /* Adjust radius */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-link:hover {
+    background-color: var(--title-color-dark);
+}
+
+.footer__copy {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 0.8rem; /* Smaller font for copyright */
+    margin-top: 1.5rem; /* Reduce margin */
+}
+
+.copyright {
+    margin: 1.5rem 0; /* Adjust overall margin */
+    padding-bottom: 1rem; /* Reduce padding */
+    text-align: center;
+    font-size: 0.85rem; /* Smaller copyright text */
+}
+
+/* BREAK POINTS */
+@media screen and (max-width: 992px) {
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer__social-link {
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 0.9rem; /* Smaller on smaller screens */
+    }
+
+    .footer__title {
+        font-size: 1rem; /* Smaller title for smaller screens */
+    }
+
+    .footer__list {
+        column-gap: 0.75rem;
+    }
+
+    .footer__copy {
+        font-size: 0.75rem; /* Smaller copyright text */
+    }
+
+}

@@ -1,0 +1,128 @@
+.project_screenshots__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
+    gap: 3rem;
+    padding: 0;
+    justify-content: space-around;
+    background-color: white;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project_screenshots__content {
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    height: max-content;
+}
+
+.project_screenshots__title {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.project_screenshots__image {
+    width: 20rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.project_screenshots__image:hover {
+    transform: scale(1.1);
+}
+
+.project_screenshots__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+    width: 1fr;
+}
+
+.project_screenshots__modal-content {
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.project_screenshots__modal-title {
+    margin-bottom: 2rem;
+}
+
+.project_screenshots__modal-image {
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+
+.project_screenshots__modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.view__project_screenshots-button {
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    font-weight: var(--font-medium);
+    margin-top: 1.5rem;
+}
+
+.view__project_screenshots-button:hover {
+    background-color: var(--title-color-dark);
+    transition: background-color 0.3s ease;
+}
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .project_screenshots__container {
+        grid-template-columns: repeat(1fr);
+    }
+
+}
+
+@media (max-width: 576px) {
+    .project_screenshots__container {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .project_screenshots__modal-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .project_screenshots__container {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .project_screenshots__modal-description {
+        font-size: 0.7rem;
+    }
+}
