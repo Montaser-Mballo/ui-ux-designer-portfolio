@@ -1,6 +1,6 @@
 #project__page {
     margin-top: 0;
-    width: 100vw; /* Full width of the viewport */
+    width: 100%; /* Full width of the viewport */
 }
 
 .project_intro {

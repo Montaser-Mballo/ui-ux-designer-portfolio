@@ -235,6 +235,7 @@
 /* General small devices (like other smartphones) */
 @media (max-width: 480px) {
     .header {
+        width: 1fr;
         padding: 10px; /* Adjust header padding */
     }
 
