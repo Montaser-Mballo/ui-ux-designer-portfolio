@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import CV from "../../assets/Montaser-Mballo-CV.pdf";
+import CV from "../../assets/Montaser Mballo, CV.pdf";
 
 const Data = () => {
     return (
