@@ -24,6 +24,7 @@
 }
 
 .footer__link {
+    display: none;
     font-size: 0.9rem; /* Adjust link size */
 }
 
