@@ -49,6 +49,12 @@ const Project_Page_2 = () => {
             User-Centered Design, Responsive Design, Prototyping and Testing
           </p>
 
+          <h2>Problem</h2>
+
+          <p>
+            Polio CRM&apos;s homepage lacked a clear and engaging structure to effectively communicate its value proposition to potential users. The design was visually outdated, resulting in low user engagement. The company needed a modern, user-friendly homepage that aligned with its brand identity.
+          </p>
+
           <h2>Duration</h2>
 
           <p>
@@ -84,6 +90,16 @@ const Project_Page_2 = () => {
             </div>
           </p>
         </div>
+      </div>
+
+      <div className="btn_container">
+        <a
+          href="https://www.figma.com/proto/mUsAlUiC75kaEQfxE1ZbVN/Polio-CRM?page-id=1149%3A165&node-id=1159-3362&viewport=-98%2C1665%2C0.27&t=kxMLSVWVBjQ0gw67-1&scaling=scale-down-width&content-scaling=fixed"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button button--flex">
+          View Project
+        </a>
       </div>
 
       <div className="project_body">
